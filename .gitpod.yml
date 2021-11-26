@@ -1,9 +1,10 @@
 tasks:
   - init: |
       echo 'TODO: build project'
-      pip install -U pip setuptools wheel pip-tools requests poetry
-      pip install -U pip yapf autoflake isort coverage 
-      sudo apt-get install lynx direnv poetry -y
+      pip install -U pip setuptools wheel pip-tools requests poetry bs4 
+      pip install -U pip yapf autoflake isort coverage scrapy newspaper3k
+      pip install -U 'reqests[socks]'
+      sudo apt-get install lynx direnv poetry tor -y
     command: |
       echo 'TODO: start app'
       poetry run python -m pip freeze > requirements.in
