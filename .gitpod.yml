@@ -3,7 +3,7 @@ tasks:
       echo 'TODO: build project'
       pip install -U pip setuptools wheel pip-tools requests poetry bs4 
       pip install -U pip yapf autoflake isort coverage scrapy newspaper3k
-      pip install -U 'reqests[socks]'
+      pip install -U 'requests[socks]'
       sudo apt-get install lynx direnv poetry tor -y
     command: |
       echo 'TODO: start app'
